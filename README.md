@@ -14,7 +14,7 @@ Query-Builder-Chatbot is a Streamlit application that assists users in generatin
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/Query-Builder-Chatbot.git
+   git clone https://github.com/Warishayat/Query-Builder-Chatbot
    cd Query-Builder-Chatbot
    ```
 
@@ -50,7 +50,7 @@ Query-Builder-Chatbot is a Streamlit application that assists users in generatin
    Create a `.env` file in the project root directory and add your Google API key:
 
    ```env
-   GOOGLE_API_KEY=your_google_api_key_here #in this you will generate tour own api key my api will not work in your case btw its free.
+   GOOGLE_API_KEY=your_google_api_key_here
    ```
 
 ## Usage
@@ -66,8 +66,27 @@ Query-Builder-Chatbot is a Streamlit application that assists users in generatin
 2. **Interact with the chatbot**
 
    - Enter your natural language query in the text input box.
-   - Click the 'Subject' button to generate the SQL query.
+   - Click the 'Submit' button to generate the SQL query.
    - View the generated SQL query displayed on the screen.
+
+## Docker Setup
+
+1. **Build the Docker image**
+
+   ```bash
+   docker build -t query-builder .
+   ```
+
+2. **Run the Docker container**
+
+   ```bash
+   docker run -p 8501:8501 query-builder
+   ```
+
+3. **Access the application**
+
+   - On your local machine: `http://localhost:8501`
+   - On your local network: `http://192.168.18.149:8501`
 
 ## Examples
 
@@ -92,3 +111,4 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 ## License
 
 This project is licensed under the MIT License.
+```
